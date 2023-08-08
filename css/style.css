@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap");
+header {
+  color: white;
+}
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .container .logo h3 {
+  font-size: 30px;
+}
+header .container .logo h3 span {
+  color: #eb727e;
+}
+header .container .logo img {
+  width: 95px;
+}
+header .container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+header .container .info .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+header .container .info .links .link {
+  font-weight: 500;
+  font-size: 17px;
+  height: 100%;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+header .container .info .links .link svg {
+  width: 14px;
+}
+header .container .info .links .link.active, header .container .info .links .link:hover {
+  color: #eb727e !important;
+}
+header .container .info .links .link_list {
+  position: relative;
+}
+header .container .info .links .link_list:hover .list {
+  opacity: 1;
+  z-index: 100;
+  top: 60px;
+}
+header .container .info .links .link_list .list {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 5px;
+  width: 170px;
+  border: 1px solid #e2e2e2;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+header .container .info .links .link_list .list .item {
+  display: block;
+  font-weight: 600;
+  color: #37373c !important;
+}
+header .container .info .links .link_list .list .item:hover {
+  color: #eb727e !important;
+}
+header .container .info .links .link_list .list .item:not(:last-child) {
+  margin-bottom: 10px;
+}
+header .container .info .btn_contact {
+  background: transparent;
+  color: #eb727e !important;
+  border: 1px solid #eb727e;
+  font-weight: 600;
+  padding: 7px 25px;
+  border-radius: 4px;
+}
+header .container .info .btn_contact:hover {
+  color: #eb727e;
+}
+header .container .btn_menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 8px 0;
+  }
+  header .container .logo h3 {
+    font-size: 25px;
+  }
+  header .container .logo img {
+    width: 55px;
+  }
+  header .container .info .links {
+    display: none;
+  }
+  header .container .info .btn_contact {
+    padding: 5px 15px;
+    font-size: 14px;
+    display: none;
+  }
+  header .container .info .btn_menu {
+    display: block;
+    cursor: pointer;
+  }
+  header .container .info .btn_menu svg {
+    width: 25px;
+  }
+}
+.hero_section {
+  height: calc(100vh - 66px);
+  position: relative;
+  color: white;
+}
+.hero_section .container {
+  height: 100%;
+}
+.hero_section .line {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.hero_section .line > div {
+  width: 50%;
+}
+.hero_section .line .left .title {
+  font-size: 60px;
+  font-weight: 700;
+}
+.hero_section .line .left .desc {
+  max-width: 700px;
+  margin: auto;
+}
+.hero_section .line .left .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.hero_section .line .left .btns a {
+  font-weight: 600;
+  padding: 7px 25px;
+  border-radius: 4px;
+}
+.hero_section .line .left .btns a.btn_fill {
+  background: #eb727e;
+  color: white !important;
+}
+.hero_section .line .left .btns a.btn_transparent {
+  background: transparent;
+  color: #eb727e !important;
+  border: 1px solid #eb727e;
+}
+.hero_section .line .right .image img {
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .hero_section {
+    height: calc(100vh - 54px);
+  }
+  .hero_section .line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .hero_section .line > div {
+    width: 100%;
+  }
+  .hero_section .line .left {
+    text-align: center;
+  }
+  .hero_section .line .left .title {
+    font-size: 25px;
+  }
+  .hero_section .line .left .desc {
+    margin-bottom: 7px;
+    line-height: 1.6;
+    font-size: 13px;
+  }
+  .hero_section .line .left .btns {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero_section .line .left .btns a {
+    padding: 4px 20px;
+    font-size: 15px;
+  }
+  .hero_section .line .right .image {
+    width: 100%;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden !important;
+  direction: rtl;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Cairo", sans-serif !important;
+  overflow-x: hidden !important;
+  direction: rtl;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+svg {
+  width: 20px;
+}
+
+main {
+  background-image: url(../images/dark-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
