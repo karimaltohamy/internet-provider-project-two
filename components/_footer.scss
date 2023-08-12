@@ -47,11 +47,9 @@ footer {
       align-items: center;
       gap: 30px;
 
-      h3 {
-        font-size: 30px;
-
-        span {
-          color: $primary-color;
+      .logo {
+        img {
+          width: 90px;
         }
       }
 

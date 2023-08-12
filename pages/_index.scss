@@ -15,7 +15,7 @@ $dark-color: #01080e;
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -26,13 +26,15 @@ $dark-color: #01080e;
 
     .left {
       .title {
-        font-size: 60px;
+        font-size: 45px;
         font-weight: 700;
       }
 
       .desc {
         max-width: 700px;
         margin: auto;
+
+        font-size: 14px;
       }
 
       .btns {
@@ -40,11 +42,11 @@ $dark-color: #01080e;
         align-items: center;
         justify-content: center;
         gap: 20px;
-        margin-top: 20px;
+        margin-top: 10px;
 
         a {
           font-weight: 600;
-          padding: 7px 25px;
+          padding: 5px 25px;
           border-radius: 4px;
           &.btn_fill {
             background: $primary-color;
@@ -63,7 +65,7 @@ $dark-color: #01080e;
     .right {
       .image {
         img {
-          width: 70%;
+          width: 65%;
         }
       }
     }

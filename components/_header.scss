@@ -3,6 +3,8 @@ $primary-color: #eb727e;
 // start header
 header {
   color: white;
+  padding: 10px 0;
+
   .container {
     display: flex;
     align-items: center;
@@ -17,7 +19,7 @@ header {
         }
       }
       img {
-        width: 95px;
+        width: 90px;
       }
     }
 
